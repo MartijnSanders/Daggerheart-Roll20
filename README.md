@@ -9,27 +9,34 @@ See https://app.roll20.net/forum/permalink/12368573/ and https://app.roll20.net/
 
 This solution is intended to comply with the Darrington Press Community Gaming License (https://darringtonpress.com/wp-content/uploads/2025/06/DPCGL-June-26-2025.pdf), but i am no lawyer.
 
-Step 1: Create a game with **no** character sheet. 
+Step 1: Create a game with **no** character sheet using the default sandbox. 
+_This is needed because of a bug in setDefaultToken in the experimental sandbox_
 
 Step 2: Obtains a copy of https://github.com/seansbox/daggerheart-srd/blob/main/.build/json/adversaries.json
 
 Step 3: Open Daggerheart-Adversaries-Template.js in a code editor and insert the content of above json in the line 
+
 ```const adversaries = [];```
+
 Line 192 abouthish, almost at the bottome of the file.
 
-Step 4: 
+Step 4: Upload Daggerheart-Adversaries-Template.js in your game.
 
-Step 1: mod creates srd adversaries based on adversaries.json found in https://github.com/seansbox/daggerheart-srd. 
-Attributes and abilities are created based on https://www.youtube.com/watch?v=nreo4xyZQE4.
-Also a default image is used as avatar en default token (image created by me).
+Step 5: Open the Roll20 game and enter in chat
 
-Step 2: manually drop images in the avatars of the adversaries/npcs
+```!dgha --create```
 
-Step 3: run mod to update the tokens.
+The mod now creates all srd adversaries as characters. 
+Characters are filled with attributes and abilities with inspiration by https://www.youtube.com/watch?v=nreo4xyZQE4.
+A default image is used as avatar and default token (ugly token image created by me).
 
-Still not as easy as with DND npcs. But it is mostly automated and repeatable if/when npc attributes might be cleared. 
+Step 6: manually drop images in the avatars of the adversaries/npcs. Do not fill the token, as the mod overwrites the tokens with the avatar image and adversary info.
+_As I do not own right on images, you need to bring your own._
 
-Step 4: Transmogrify the used adversaries into my play game
+Step 7: run mod to update the tokens.
 
+```!dgha --create```
+
+Step 8: Transmogrify the used adversaries into your play game
 
 Not perfect, but good enough to survive until rhe demiplane-roll20 integration catches up.
