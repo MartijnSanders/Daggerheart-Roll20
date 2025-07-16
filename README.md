@@ -3,7 +3,7 @@ Helpers for playing Daggerheart on Roll20.
 
 
 
-# Adversaries.js
+# Daggerheart-Adversaries-Template.js
 This is a temporary solution to support Daggerheart Adversaries in Roll20 until the demiplane-roll20 integration supports Adversaries.
 See https://app.roll20.net/forum/permalink/12368573/ and https://app.roll20.net/forum/permalink/12408912/ .
 
