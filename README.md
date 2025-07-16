@@ -39,4 +39,6 @@ Step 7: run mod to update the tokens.
 
 Step 8: Transmogrify the used adversaries into your play game
 
+![alt text](Daggerheart-Adversaries-TokenButtons.png)
+
 Not perfect, but good enough to survive until rhe demiplane-roll20 integration catches up.
